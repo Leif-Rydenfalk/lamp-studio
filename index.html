@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lamppost · render.scene/1</title>
+<link rel="stylesheet" href="./style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<header id="top">
+  <div class="brand"><span class="mark">◧</span><span>ce-net <em>· one renderer</em></span></div>
+  <div class="where"><b>华发路</b><span>Huafa Road · Huaqiangbei</span></div>
+  <div class="caps" id="caps">render.scene/1 · connecting</div>
+  <div class="live" id="live"><i></i><span id="liveTxt">connecting</span></div>
+</header>
+
+<aside id="panel">
+  <div class="phead"><div><h1 id="ptitle">Huafa Road</h1><p id="psub">render.scene/1</p></div><button id="pclose">×</button></div>
+  <div id="pbody"><p class="muted">Loading the scene…</p></div>
+</aside>
+
+<div id="lod">
+  <div class="lrow"><span>LOD</span><b id="lodTxt">–</b></div>
+  <div class="lbar"><i id="lodHi"></i><i id="lodLo"></i></div>
+  <div class="lrow small"><span id="lodHiTxt">high 0</span><span id="lodLoTxt">low 0</span></div>
+</div>
+
+<section id="trace">
+  <div class="thead"><span>Boundary handoffs</span><em>from the cells, carried in the scene document</em></div>
+  <ol id="tlist"></ol>
+</section>
+<div id="toast"></div>
+<div id="load"><div class="ring"></div><span>Attaching to the scene…</span></div>
+<div id="err" hidden></div>
+<div id="hint">drag to orbit · scroll to zoom · 1 street / 2 pavement / 3 block / 4 plan</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

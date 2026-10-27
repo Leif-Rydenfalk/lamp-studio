@@ -1,0 +1,88 @@
+{
+ "caps": {
+  "backend": "webgl2",
+  "features": [
+   "lod",
+   "shadows",
+   "sse",
+   "interest"
+  ],
+  "max_texture": 16384,
+  "raytracing": false,
+  "webgpu": false
+ },
+ "dynamic": [],
+ "interest": {
+  "lat": 52.51767572,
+  "lon": 13.39770114,
+  "radius_m": 30.0
+ },
+ "layers": [
+  {
+   "id": "lamp",
+   "visible": true
+  },
+  {
+   "id": "studio",
+   "visible": true
+  }
+ ],
+ "nodes": [
+  {
+   "geometry": {
+    "kind": "lamp",
+    "lamp": {
+     "arm_m": 1.7000000476837158,
+     "asset": "43378-2110031-00",
+     "city": "Berlin",
+     "color": "#1e3a2f",
+     "heading_deg": 174.08999633789062,
+     "height_m": 8.199999809265137,
+     "lat": 52.51767572,
+     "lon": 13.39770114,
+     "lumens": 8400,
+     "name": "Lamppost 31",
+     "on": true,
+     "power_w": 55.0,
+     "street": "Unter den Linden",
+     "style": "berlin-mast-arm"
+    }
+   },
+   "id": "lamp",
+   "kind": "props",
+   "layer": "lamp",
+   "parent": null
+  }
+ ],
+ "revision": 1,
+ "schema": "render.scene/1",
+ "session": "lamp-43378-2110031-00",
+ "source": {
+  "asset": "43378-2110031-00",
+  "cell": "street.lamp@1",
+  "live": true,
+  "register": "Berlin GDI WFS beleuchtung, feature beleuchtung.153492, dl-de/by-2-0",
+  "snapshot": true
+ },
+ "stats": {
+  "cells_kept": 1,
+  "cells_total": 1,
+  "nodes": 1
+ },
+ "style": "studio",
+ "view": {
+  "fov": 42.0,
+  "max": 30.0,
+  "min": 2.2,
+  "pos": [
+   7.4,
+   4.6,
+   12.8
+  ],
+  "target": [
+   0.55,
+   4.05,
+   0.0
+  ]
+ }
+}
